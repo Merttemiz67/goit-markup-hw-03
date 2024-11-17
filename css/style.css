@@ -1,59 +1,87 @@
+/* Genel Ayarlar */
 body {
-    font-family: "Roboto", sans-serif;
     margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
     line-height: 1.6;
+    background-color: #ffffff;
     color: #434455;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Genel Layout */
 .container {
     max-width: 1158px;
     margin: 0 auto;
-    padding: 156px, 0px, 156px, 0px;
+    padding: 0 156px;
+    /* Sol ve sağdan 156px boşluk */
 }
 
 /* Header */
 .site-header {
-    background-color: #ffffff;
-    color: #2E2F42
+    border-bottom: 1px solid #e7e9fc;
     padding: 20px 0;
-    position: relative;
+    background-color: #ffffff;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4D5AE5;
+}
+
+.studio {
+    color: #2E2F42;
+}
+
+.main-nav {
+    display: flex;
     align-items: center;
 }
 
 .nav-list {
     display: flex;
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    gap: 40px;
 }
 
 .nav-link {
-    color: #434455;
-    /* Menü yazı rengi */
-    text-decoration: none;
     font-size: 16px;
     font-weight: 500;
+    color: #434455;
 }
 
 .nav-link:hover {
     color: #4D5AE5;
-
 }
 
-.address {
+.site-address {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: 5px;
 }
 
+.address-list {
+    display: flex;
+    gap: 40px;
+}
+
 .address-link {
-    color: #434455;
     font-size: 14px;
-    text-decoration: none;
+    color: #434455;
 }
 
 .address-link:hover {
@@ -63,61 +91,159 @@ body {
 /* Hero Section */
 .hero-section {
     background-color: #2e2f42;
-    color: #ffffff;
-    text-align: center;
-    padding: 100px 0;
+    color: white;
+    padding: 80px 0;
+    text-align: left;
 }
 
 .hero-title {
     font-size: 48px;
     margin-bottom: 20px;
-    color: #ffffff;
 }
 
 .hero-button {
-    background-color: #4D5AE5
-    color: #ffffff;
-    padding: 12px 24px;
-    font-size: 16px;
+    background-color: #4D5AE5;
+    color: white;
     border: none;
+    padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .hero-button:hover {
-    background-color: #ff4f41;
-    /* Hover rengi */
-}
+    background-color: #404bbf;
 }
 
-/* Features */
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+/* Features Section */
+.features-section {
+    margin: 40px 0;
+}
+
+.features-list {
+    display: flex;
     gap: 20px;
-    text-align: center;
+}
+
+.feature-item {
+    flex: 1;
+    text-align: left;
+}
+
+.feature-item h3 {
+    font-size: 20px;
+    color: #2e2f42;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 16px;
+    color: #434455;
 }
 
 /* Team Section */
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+.team-section {
+    background-color: #f4f4fd;
+    padding: 40px 0;
+}
+
+.team-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2e2f42;
+}
+
+.team-list {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.team-member {
     text-align: center;
 }
 
+.team-member img {
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 18px;
+    color: #2e2f42;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #434455;
+}
+
 /* Portfolio Section */
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.portfolio-section {
+    padding: 40px 0;
+}
+
+.portfolio-section h2 {
     text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2e2f42;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.portfolio-item {
+    flex: 1 1 calc(33.333% - 20px);
+    /* 3 sütun düzen */
+    text-align: center;
+}
+
+.portfolio-item img {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.portfolio-item h3 {
+    font-size: 18px;
+    color: #2e2f42;
+    margin-bottom: 5px;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    color: #434455;
 }
 
 /* Footer */
 .footer {
     background-color: #2e2f42;
-    color: #fff;
-    text-align: center;
+    color: white;
     padding: 40px 0;
+    text-align: left;
+}
+
+.footer .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4D5AE5;
+}
+
+.footer .studio-second {
+    color: #ffffff;
+}
+
+.footer p {
+    margin-top: 10px;
+    color: #ffffff;
 }
