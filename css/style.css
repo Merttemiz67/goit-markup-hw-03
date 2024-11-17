@@ -48,44 +48,64 @@ header div {
     color: #2E2F42;
 }
 
-.main-nav {
+nav {
     display: flex;
     align-items: center;
 }
 
-.nav-list {
+.summary-nav {
+    display: flex;
+    align-items: center;
+}
+
+.summary-nav ul {
     display: flex;
     gap: 40px;
 }
 
-.nav-link {
+.summary-nav-lst {
+    display: flex;
+    gap: 40px;
+}
+
+.summary-nav-lnk" {
     font-size: 16px;
     font-weight: 500;
     color: #434455;
+    padding: 24px 0;
 }
 
-.nav-link:hover {
+.summary-nav-lnk a {
+    margin-right: 76px
+}
+
+.summary-nav-lnk":hover {
     color: #4D5AE5;
 }
 
-.site-address {
+address div ul {
+    display: flex;
+    gap: 40px;
+}
+
+.ste-address {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
 }
 
-.address-list {
+.address-lst {
     display: flex;
     gap: 40px;
 }
 
-.address-link {
+.address-lnk {
     font-size: 14px;
     color: #434455;
 }
 
-.address-link:hover {
+.address-lnk:hover {
     color: #4D5AE5;
 }
 
