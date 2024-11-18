@@ -51,34 +51,29 @@ nav ul li a {
     color: #2E2F42;
 }
 
-.summary-nav {
+.summary {
     display: flex;
     align-items: center;
 }
 
-.summary-nav {
-    display: flex;
-    align-items: center;
-}
-
-.summary-nav ul {
+.summary ul {
     display: flex;
     gap: 40px;
 }
 
-.summary-nav-lst {
+.summarylst {
     display: flex;
     gap: 40px;
 }
 
-.summary-nav-lnk {
+.summarylnk {
     font-size: 16px;
     font-weight: 500;
     color: #434455;
     padding: 24px 0;
 }
 
-.summary-nav-lnk a {
+.summarylst li a {
     margin-right: 76px
 }
 
