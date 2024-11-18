@@ -143,6 +143,19 @@ address div ul {
     padding: 120px 0;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .features-section ul {
     display: flex;
     gap: 24px;
@@ -157,7 +170,7 @@ address div ul {
     width: calc((100% - 72px) / 4
 }
 
-.features-section ul li h3 {
+.features-section .feature-h {
     font-size: 20px;
     color: #2e2f42;
     margin-bottom: 8px;
@@ -177,8 +190,8 @@ address div ul {
     margin-bottom: 72px;
 }
 
-.team-section ul {
-    width: calc((100% - 72px) / 4;
+.team-lst {
+    width: calc((100% - 72px) / 4);
     display: flex;
     gap: 40px;
     justify-content: space-between;
@@ -208,7 +221,7 @@ address div ul {
 }
 .team-member {
     text-align: center;
-    width: calc((100% - 72px) / 4;
+    width: calc((100% - 72px) / 4);
 
 }
 
@@ -297,13 +310,20 @@ address div ul {
 }
 
 .footer .logo {
-    font-size: 20px;
-    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: #4D5AE5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer .studio-second {
     color: #ffffff;
+    display: inline-block;
 }
 
 .footer-f a {
