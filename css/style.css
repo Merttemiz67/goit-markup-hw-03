@@ -89,7 +89,7 @@ nav ul li a {
     color: #4D5AE5;
 }
 
-.address div ul {
+address ul {
     display: flex;
     gap: 40px;
 }
@@ -175,10 +175,10 @@ nav ul li a {
 }
 
 .feature-t ul li {
-    width: calc((100% - 72px) / 4
+    width: calc((100% - 72px) / 4);
 }
 
-.features-section .container ul li h3 {
+.feature-t h3 {
     font-size: 20px;
     color: #2e2f42;
     margin-bottom: 8px;
@@ -313,7 +313,7 @@ nav ul li a {
 }
 
 
-.footer-f {
+footer {
     background-color: #2e2f42;
     color: white;
     padding: 100px 0;
@@ -339,7 +339,7 @@ nav ul li a {
     color: #ffffff;
 }
 
-.footer-f a {
+footer .container a {
     display: inline-block;
     margin-bottom: 16px;
 }
