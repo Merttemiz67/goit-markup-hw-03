@@ -43,10 +43,20 @@ header div {
 
 nav .logo {
     margin-right: 76px;
+    color: #4D5AE5;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.03em;
 }
 
 nav .studio {
     margin-right: 76px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    color: #2E2F42;
 }
 
 nav ul li a {
@@ -125,7 +135,9 @@ address ul {
 .hero-title {
     font-size: 48px;
     margin-bottom: 20px;
-    max-width: 496px
+    max-width: 496px;
+    text-align: center;
+    padding-bottom: 48px;
 }
 
 .hero-button {
@@ -200,10 +212,8 @@ address ul {
 }
 
 .team-section div ul {
-    width: calc((100% - 72px) / 4);
     display: flex;
     gap: 24px;
-    justify-content: space-between;
 }
 
 .team-section .container ul li div {
@@ -222,8 +232,8 @@ address ul {
     text-align: center;
 }
 .team-section .container ul li {
+    flex: 1 1 calc(33.333% - 20px);
     text-align: center;
-    width: calc((100% - 72px) / 4);
 }
 
 .team-lst .team-member:first-child {
@@ -237,7 +247,6 @@ address ul {
 .team-member img {
     display: block;
     width: 100%;
-    border-radius: 50%;
     margin-bottom: 10px;
 }
 
@@ -268,7 +277,6 @@ address ul {
 }
 
 .portfolio-section .container ul li div {
-    width: calc((100% - 72px) / 4);
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none; 
@@ -311,7 +319,7 @@ address ul {
 
 footer {
     background-color: #2e2f42;
-    color: white;
+    color: #F4F4FD;
     padding: 100px 0;
     text-align: left;
 }
@@ -319,6 +327,7 @@ footer {
 .footer .container a {
     display: inline-block;
     margin-bottom: 16px;
+    color: #4D5AE5;
 }
 
 .footer .logo {
@@ -327,8 +336,6 @@ footer {
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4D5AE5;
 }
 
 .footer .studio-second {
